@@ -1,0 +1,6 @@
+steps:
+  - name: "node:$_NODE_VERSION"
+    entrypoint: "bash"
+    args: ["echo", "Test"]
+substitutions:
+    _NODE_VERSION: "18"
