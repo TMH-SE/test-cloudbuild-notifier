@@ -4,9 +4,6 @@ steps:
     args: ["-c", "echo Test"]
   - name: "node:$_NODE_VERSION"
     entrypoint: "bash"
-    args: ["-c", "sleep 30"]
-  - name: "node:$_NODE_VERSION"
-    entrypoint: "bash"
     args: ["-c", "echo Done"]
 timeout: 30s
 substitutions:
