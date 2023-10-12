@@ -1,6 +1,10 @@
 steps:
   - name: "node:$_NODE_VERSION"
     entrypoint: "bash"
+    args: ["-c", "sleep 30"]
+  - name: "node:$_NODE_VERSION"
+    entrypoint: "bash"
     args: ["-c", "echo Test"]
+timeout: 30s
 substitutions:
     _NODE_VERSION: "18"
