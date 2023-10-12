@@ -1,9 +1,9 @@
 steps:
   - name: "node:$_NODE_VERSION"
     entrypoint: "bash"
-    args: ["-c", "echo Test"]
+    args: ["-c", "exit 1"]
   - name: "node:$_NODE_VERSION"
     entrypoint: "bash"
-    args: ["-c", "echo 'Test Failed'", "exit 1"]
+    args: ["-c", "echo Test"]
 substitutions:
     _NODE_VERSION: "18"
